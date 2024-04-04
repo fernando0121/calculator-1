@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#display {
+    width: 90%;
+    font-size: 3vw; /* Use viewport width (vw) for font size */
+    padding: 4vw; /* Use viewport width (vw) for padding */
+    text-align: right;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+#calculator {
+    background-color: rgba(0, 0, 0, 0.839);
+    max-width: 90vw; /* Use viewport width (vw) */
+    overflow: hidden;
+    font-family: monospace;
+    border-radius: 4vw; /* Use viewport width (vw) for border radius */
+    padding: 2vw; /* Use viewport width (vw) for padding */
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2vw; /* Use viewport width (vw) for grid gap */
+}
+
+button {
+    height: 15vw; /* Use viewport width (vw) for button height */
+    width: 15vw; /* Use viewport width (vw) for button width */
+    border-radius: 50%;
+    background-color: rgba(84, 83, 83, 0.113);
+    border: none;
+    color: whitesmoke;
+    font-size: 3vw; /* Use viewport width (vw) for font size */
+    font-family: monospace;
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.499);
+    box-shadow: 2px 5px 5vw black; /* Use viewport width (vw) for box shadow */
+    margin: 2vw; /* Use viewport width (vw) for margin */
+}
+
+button:hover {
+    background-color: rgba(240, 248, 255, 0.565);
+    color: black;
+}
+
+button:active {
+    height: 15.5vw; /* Use viewport width (vw) for active state height */
+    width: 15.5vw; /* Use viewport width (vw) for active state width */
+}
+
+.operator {
+    background-color: rgba(255, 166, 0, 0.804);
+}
+
+.operator:hover {
+    background-color: rgba(255, 166, 0, 0.309);
+    color: black;
+}
